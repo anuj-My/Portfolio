@@ -1,12 +1,12 @@
 import React from "react";
-import { Container } from "../styles/container.styled";
+import { Container } from "../../styles/container.styled";
 import {
   HeadingWrapper,
   StyledSection,
   HeadingPrimary,
   Divider,
-} from "../styles/Section.Styled";
-import { AnchorButtonBlack } from "../styles/Button.styled";
+} from "../../styles/Section.Styled";
+import { AnchorButtonBlack } from "../../styles/Button.styled";
 import { ContactContent, ContactForm } from "./Contact.Styled";
 
 export default function Contact() {
