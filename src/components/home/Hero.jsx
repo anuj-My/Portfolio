@@ -17,7 +17,9 @@ function Hero() {
               Designing. Looking for an opportunity to apply creative, problem
               solving and communicative skills on a development team.
             </p>
-            <AnchorButtonBlack href="#contact">Get in touch</AnchorButtonBlack>
+            <AnchorButtonBlack href="#contact" rel="noreferrer">
+              Get in touch
+            </AnchorButtonBlack>
           </div>
         </Container>
       </StyledHero>

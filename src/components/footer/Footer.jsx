@@ -5,7 +5,7 @@ function Footer() {
   return (
     <StyledFooter>
       <div>
-        <a href="#home">
+        <a href="#home" rel="noreferrer">
           <p>Built and Design by Anuj Maurya.</p>
         </a>
       </div>

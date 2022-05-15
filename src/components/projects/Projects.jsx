@@ -72,8 +72,8 @@ export default function Projects() {
                 </ul>
               </div>
 
-              <AnchorButtonBlack>Github</AnchorButtonBlack>
-              <AnchorButtonGreen>Preview</AnchorButtonGreen>
+              <AnchorButtonBlack rel="noreferrer">Github</AnchorButtonBlack>
+              <AnchorButtonGreen rel="noreferrer">Preview</AnchorButtonGreen>
             </CardBackContent>
           </CardBack>
         </ProjectCard>
