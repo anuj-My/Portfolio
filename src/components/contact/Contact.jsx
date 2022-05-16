@@ -13,6 +13,9 @@ import { AnchorButtonBlack } from "../../styles/Button.styled";
 import { ContactContent, ContactForm } from "./Contact.Styled";
 
 export default function Contact() {
+  function handleSubmit() {
+    alert("thank you! Your submission has been received.");
+  }
   return (
     <StyledSection id="contact">
       <Container>
@@ -24,7 +27,7 @@ export default function Contact() {
           <ContactForm>
             <form
               name="contact-form"
-              onSubmit="submit"
+              onSubmit={handleSubmit}
               method="POST"
               data-netlify="true"
               className="flex"
