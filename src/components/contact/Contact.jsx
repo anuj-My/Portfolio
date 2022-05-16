@@ -1,5 +1,8 @@
 import React from "react";
+// import { useForm } from "@formspree/react";
+
 import { Container } from "../../styles/container.styled";
+
 import {
   HeadingWrapper,
   StyledSection,
@@ -13,16 +16,23 @@ export default function Contact() {
   return (
     <StyledSection id="contact">
       <Container>
-        <HeadingWrapper>
+        <HeadingWrapper style={{ justifyContent: "center" }}>
           <HeadingPrimary>Get in touch</HeadingPrimary>
-          <Divider></Divider>
+          <Divider style={{ display: "none" }}></Divider>
         </HeadingWrapper>
         <ContactContent>
           <ContactForm>
-            <form action="POST" data-netlify="true" className="flex">
+            <form
+              name="Contact v1"
+              onSubmit="submit"
+              method="POST"
+              data-netlify="true"
+              className="flex"
+            >
+              <input type="hidden" name="form-name" value="Contact v1" />
               <div className="group-input-wrap">
                 <div className="input-label-group">
-                  <label htmlFor="name">First Name</label>
+                  <label htmlFor="name">Full Name</label>
                   <div className="input-wrap">
                     <input
                       type="text"
@@ -30,20 +40,37 @@ export default function Contact() {
                       name="name"
                       id="name"
                       placeholder="Your Name"
+                      autoComplete="off"
                       required
                     />
                   </div>
                 </div>
 
                 <div className="input-label-group">
-                  <label htmlFor="Email">Email</label>
+                  <label htmlFor="email">Email</label>
                   <div className="input-wrap">
                     <input
                       type="email"
                       className="input-box"
                       name="email"
                       id="email"
-                      placeholder="@gmail.com"
+                      placeholder="Your email"
+                      autoComplete="off"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="input-label-group">
+                  <label htmlFor="subject">Subject</label>
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      className="input-box"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      max="30"
                       required
                     />
                   </div>
@@ -58,17 +85,17 @@ export default function Contact() {
                       name="message"
                       id="message"
                       placeholder="Write Your Message Here..."
+                      min="5"
                       required
                     ></textarea>
                   </div>
                 </div>
               </div>
-              <div>
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-              <AnchorButtonBlack as="button">Say hello!</AnchorButtonBlack>
+              <AnchorButtonBlack as="button" type="submit">
+                Say hello!
+              </AnchorButtonBlack>
             </form>
-            <h4>Say Hello !</h4>
+            {/* <h4>Say Hello !</h4> */}
           </ContactForm>
         </ContactContent>
       </Container>

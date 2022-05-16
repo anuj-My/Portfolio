@@ -6,4 +6,8 @@ export const Container = styled.div`
   margin: 0 auto;
 
   /* media qureis */
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;

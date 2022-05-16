@@ -5,8 +5,12 @@ export const StyledAbout = styled.div`
   align-items: center;
 
   .about-content {
-    width: 70%;
+    width: clamp(500px, 70%, 80rem);
   }
+
+  /* @media screen and (max-width: 410px) {
+    font-size: 2.5rem;
+  } */
 `;
 
 export const InfiniteScrollBar = styled.div`

@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ProjectContent = styled.div`
   display: grid;
   align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 33rem));
+  /* justify-content: center; */
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
   padding-bottom: 5rem;
 

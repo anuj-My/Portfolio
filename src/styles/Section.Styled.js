@@ -4,6 +4,10 @@ export const StyledSection = styled.section`
   padding: 5rem 0;
   display: grid;
   align-items: center;
+
+  /* @media screen and (max-width: 600px) {
+    padding: 0rem;
+  } */
 `;
 
 export const HeadingWrapper = styled.div`
@@ -11,10 +15,18 @@ export const HeadingWrapper = styled.div`
   align-items: center;
   gap: 4rem;
   margin-bottom: 5rem;
+
+  @media screen and (max-width: 800px) {
+    gap: 1rem;
+  }
 `;
 export const HeadingPrimary = styled.h1`
   font-size: 4rem;
   font-family: "Major Mono Display", monospace;
+
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
 
   &::after {
     content: "";

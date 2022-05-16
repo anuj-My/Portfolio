@@ -13,16 +13,24 @@ import { StyledMain } from "../styles/Main.Styled";
 
 const DarkMode = styled.div`
   position: fixed;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 0rem;
+  right: 4.5rem;
   font-size: 3rem;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 
-  span {
-    font-size: 1.6rem;
+  &::after {
+    content: "";
+    display: block;
+    height: 9rem;
+    width: 1px;
+    background-color: ${({ theme }) => theme.textCl};
+    opacity: 0.4;
+    margin-top: 2rem;
   }
 `;
 
@@ -65,7 +73,6 @@ function App() {
         <Footer />
 
         <DarkMode onClick={themeModeToggler}>
-          <span>Dark Mode</span>
           <CgDarkMode />
         </DarkMode>
         <Icons />

@@ -15,7 +15,7 @@ export const ContactContent = styled.div`
   }
 
   .input-wrap {
-    width: 45rem;
+    width: 100%;
     margin-right: 2rem;
   }
 
@@ -51,11 +51,27 @@ export const ContactContent = styled.div`
 `;
 
 export const ContactForm = styled.div`
-  h4 {
+  /* h4 {
     font-size: 3rem;
     font-family: "Major Mono Display", monospace;
   }
   display: flex;
   gap: 4rem;
+  align-items: center; */
+`;
+
+export const Modal = styled.div`
+  width: 100%;
+  background-color: ${({ theme }) => theme.textCl};
+  color: ${({ theme }) => theme.backgroundCl};
+  padding: 1rem;
+  padding: 4rem;
+  text-align: center;
+`;
+
+export const ModalContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
 `;
