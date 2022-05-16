@@ -48,6 +48,78 @@
     <title>Anuj Maurya</title>
   </head>
   <body>
+    <form
+      name="contact-form"
+      netlify
+      netlify-honeypot="bot-field"
+      action="/"
+      hidden
+    >
+      <div className="group-input-wrap">
+        <div className="input-label-group">
+          <label htmlFor="name">Full Name</label>
+          <div className="input-wrap">
+            <input
+              type="text"
+              className="input-box"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </div>
+
+        <div className="input-label-group">
+          <label htmlFor="email">Email</label>
+          <div className="input-wrap">
+            <input
+              type="email"
+              className="input-box"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </div>
+
+        <div className="input-label-group">
+          <label htmlFor="subject">Subject</label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              className="input-box"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              max="30"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div className="textarea-group-wrap">
+        <div className="input-label-group">
+          <label htmlFor="message">Message</label>
+          <div className="input-wrap">
+            <textarea
+              className="input-box"
+              name="message"
+              id="message"
+              placeholder="Write Your Message Here..."
+              min="5"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <AnchorButtonBlack as="button" type="submit">
+        Say hello!
+      </AnchorButtonBlack>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
