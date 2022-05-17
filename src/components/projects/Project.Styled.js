@@ -36,7 +36,8 @@ export const CardFront = styled(CardSide)`
 
 export const CardBack = styled(CardSide)`
   transform: rotateY(180deg);
-  background-color: ${({ theme }) => theme.backgroundCl};
+  color: ${({ theme }) => theme.backgroundCl};
+  background-color: ${({ theme }) => theme.textCl};
   display: flex;
   justify-content: center;
   align-items: center;

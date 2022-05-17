@@ -5,14 +5,13 @@ export const NavbarWrapper = styled.header`
   display: flex;
   width: 100%;
   align-items: center;
+  transition: transform 0.3s ease-in;
+  transform: translateY(${({ scroll }) => (scroll ? 0 : -9)}rem);
   color: ${({ theme }) => theme.backgroundCl};
   background-color: ${({ theme }) => theme.textCl};
   height: 9rem;
   z-index: 1;
 
-  @media screen and (max-width: 768px) {
-    /* background-color: transparent; */
-  }
 `;
 
 const topToBottom = keyframes`
@@ -38,7 +37,8 @@ to {
 // extended from NavbarWrapper
 export const MobileNavWrapper = styled(NavbarWrapper)`
   display: none;
-
+  transition: none;
+  transform: none;
   @media screen and (max-width: 768px) {
     animation: ${({ showBars }) => (showBars ? bottomToTop : topToBottom)} 0.3s
       ease;
@@ -87,10 +87,6 @@ export const StyledNavLinks = styled.nav`
     gap: 0rem;
     align-items: center;
     list-style: none;
-    /* 
-    li {
-      margin: 1rem;
-    } */
 
     li a {
       &:link,
@@ -197,6 +193,7 @@ export const StyledBars = styled.div`
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
+    transform: translateY(${({ scroll }) => (scroll ? 0 : -9)}rem);
     gap: 0.5rem;
     justify-content: center;
     cursor: pointer;

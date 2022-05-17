@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContactContent = styled.div`
   form {
     padding: 2rem;
-    background-color: #cecece;
+    background-color: ${({ theme }) => theme.textCl};
     margin: 2rem 0;
     border-radius: 5px;
   }
@@ -58,6 +58,11 @@ export const ContactForm = styled.div`
   display: flex;
   gap: 4rem;
   align-items: center; */
+  padding: 0 10rem;
+
+  @media screen and (max-width: 1150px) {
+    padding: 0;
+  }
 `;
 
 export const Modal = styled.div`

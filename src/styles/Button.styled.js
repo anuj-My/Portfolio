@@ -53,10 +53,10 @@ export const AnchorButtonBlack = styled(AnchorButton)`
   }
 `;
 
-export const AnchorButtonGreen = styled(AnchorButton)`
-  color: ${({ theme }) => theme.backgroundCl};
-  background-color: ${({ theme }) => theme.textCl};
+export const AnchorButtonWhite = styled(AnchorButton)`
+  color: ${({ theme }) => theme.textCl};
+  background-color: ${({ theme }) => theme.backgroundCl};
   &::after {
-    background-color: ${({ theme }) => theme.textCl};
+    background-color: ${({ theme }) => theme.backgroundCl};
   }
 `;

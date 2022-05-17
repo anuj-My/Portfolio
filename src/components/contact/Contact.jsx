@@ -9,7 +9,7 @@ import {
   HeadingPrimary,
   Divider,
 } from "../../styles/Section.Styled";
-import { AnchorButtonBlack } from "../../styles/Button.styled";
+import { AnchorButtonWhite } from "../../styles/Button.styled";
 import { ContactContent, ContactForm } from "./Contact.Styled";
 
 export default function Contact() {
@@ -62,7 +62,7 @@ export default function Contact() {
 
                 <div className="input-label-group">
                   <label htmlFor="subject">Subject</label>
-                  <div class="input-wrap">
+                  <div className="input-wrap">
                     <input
                       type="text"
                       className="input-box"
@@ -90,9 +90,9 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <AnchorButtonBlack as="button" type="submit">
+              <AnchorButtonWhite as="button" type="submit">
                 Say hello!
-              </AnchorButtonBlack>
+              </AnchorButtonWhite>
             </form>
             {/* <h4>Say Hello !</h4> */}
           </ContactForm>

@@ -35,12 +35,12 @@ const DarkMode = styled.div`
 `;
 
 const dark = {
-  backgroundCl: "#111",
+  backgroundCl: "#172026",
   textCl: "#FEFCFD",
 };
 const light = {
   backgroundCl: "#FEFCFD",
-  textCl: "#111",
+  textCl: "#172026",
 };
 
 function App() {

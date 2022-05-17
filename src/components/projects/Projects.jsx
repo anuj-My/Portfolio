@@ -16,10 +16,7 @@ import {
 } from "./Project.Styled";
 
 import { Container } from "../../styles/container.styled";
-import {
-  AnchorButtonBlack,
-  AnchorButtonGreen,
-} from "../../styles/Button.styled";
+import { AnchorButtonWhite } from "../../styles/Button.styled";
 
 const cardDetails = [
   {
@@ -72,8 +69,8 @@ export default function Projects() {
                 </ul>
               </div>
 
-              <AnchorButtonBlack rel="noreferrer">Github</AnchorButtonBlack>
-              <AnchorButtonGreen rel="noreferrer">Preview</AnchorButtonGreen>
+              <AnchorButtonWhite rel="noreferrer">Github</AnchorButtonWhite>
+              <AnchorButtonWhite rel="noreferrer">Preview</AnchorButtonWhite>
             </CardBackContent>
           </CardBack>
         </ProjectCard>

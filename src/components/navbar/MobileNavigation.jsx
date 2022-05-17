@@ -6,8 +6,7 @@ import {
   Column,
 } from "./Navbar.styled";
 import { Container } from "../../styles/container.styled";
-import logo from "../../assets/images/logoBlack.svg";
-import { NavLogo } from "../logo/Logo";
+import { SliderLogo } from "../logo/Logo";
 import NavLinksList from "./NavLinksList";
 
 export default function MobileNavigation({
@@ -26,7 +25,7 @@ export default function MobileNavigation({
       )}
       <Container className="mobileNavContainer">
         <Column showBars={showBars}>
-          <NavLogo path={logo} />
+          <SliderLogo />
           <MobileNavLinks>
             <NavLinksList onClickClose={onClickClose} />
           </MobileNavLinks>
