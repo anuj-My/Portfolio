@@ -31,14 +31,29 @@ export default function Contact() {
               <input type="hidden" name="form-name" value="contact-form" />
               <div className="group-input-wrap">
                 <div className="input-label-group">
-                  <label htmlFor="name">Full Name</label>
+                  <label htmlFor="first-name">First Name</label>
                   <div className="input-wrap">
                     <input
                       type="text"
                       className="input-box"
-                      name="name"
-                      id="name"
-                      placeholder="Your Name"
+                      name="first-name"
+                      id="first-name"
+                      placeholder="First Name"
+                      autoComplete="off"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="input-label-group">
+                  <label htmlFor="last-name">Last Name</label>
+                  <div className="input-wrap">
+                    <input
+                      type="text"
+                      className="input-box"
+                      name="last-name"
+                      id="last-name"
+                      placeholder="Last Name"
                       autoComplete="off"
                       required
                     />
@@ -59,21 +74,6 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-
-                <div className="input-label-group">
-                  <label htmlFor="subject">Subject</label>
-                  <div className="input-wrap">
-                    <input
-                      type="text"
-                      className="input-box"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
-                      max="30"
-                      required
-                    />
-                  </div>
-                </div>
               </div>
               <div className="textarea-group-wrap">
                 <div className="input-label-group">
@@ -85,6 +85,8 @@ export default function Contact() {
                       id="message"
                       placeholder="Write Your Message Here..."
                       min="5"
+                      resize="false"
+                      style={{ resize: "none" }}
                       required
                     ></textarea>
                   </div>

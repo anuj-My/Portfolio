@@ -90,6 +90,7 @@ export const ProjectCard = styled.div`
 
   &:hover ${CardFront} {
     transform: rotateY(-180deg);
+    cursor: pointer;
   }
 
   &:hover ${CardBack} {

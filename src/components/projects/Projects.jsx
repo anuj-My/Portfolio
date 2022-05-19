@@ -47,7 +47,7 @@ export default function Projects() {
   const renderedCardList = cardDetails.map(
     ({ img, title, content, tech }, index) => {
       return (
-        <ProjectCard key={index}>
+        <ProjectCard key={index} className="card">
           <CardFront>
             <ImageWrapper>
               <img src={img} alt={title} />

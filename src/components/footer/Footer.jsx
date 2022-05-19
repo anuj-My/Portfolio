@@ -1,13 +1,15 @@
 import React from "react";
 import { StyledFooter } from "./Footer.Styled";
+import { Logo } from "../logo/Logo";
 
 function Footer() {
   return (
     <StyledFooter>
       <div>
         <a href="#home" rel="noreferrer">
-          <p>Built and Design by Anuj Maurya.</p>
+          <Logo />
         </a>
+        <p>Built and Design by Anuj Maurya.</p>
       </div>
     </StyledFooter>
   );

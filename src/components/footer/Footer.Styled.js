@@ -6,11 +6,20 @@ export const StyledFooter = styled.footer`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.textCl};
+  padding: 2rem 0;
 
-  height: 10rem;
+  div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-  a {
+  p {
     color: ${({ theme }) => theme.backgroundCl};
+  }
+  a {
+    /* color: ${({ theme }) => theme.backgroundCl}; */
     text-decoration: none;
   }
 `;

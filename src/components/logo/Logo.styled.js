@@ -9,7 +9,7 @@ export const LogoImg = styled.div`
   width: 7rem;
   svg {
     width: 100%;
-
+    height: 100%;
     path,
     circle {
       stroke: ${({ theme }) => theme.backgroundCl};

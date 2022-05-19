@@ -8,7 +8,9 @@ export const ContactContent = styled.div`
     border-radius: 5px;
   }
   .input-label-group label {
-    font-size: 1.6rem;
+    color: ${({ theme }) => theme.backgroundCl};
+    font-size: 1.4rem;
+    opacity: 0.8;
   }
   .input-label-group {
     margin-bottom: 1rem;
@@ -30,7 +32,7 @@ export const ContactContent = styled.div`
   }
 
   .input-box:focus {
-    outline: none;
+    outline-color: skyblue;
   }
 
   .textarea-group-wrap {
@@ -46,7 +48,7 @@ export const ContactContent = styled.div`
   }
 
   .textarea-group-wrap textarea:focus {
-    outline: none;
+    outline-color: skyblue;
   }
 `;
 
