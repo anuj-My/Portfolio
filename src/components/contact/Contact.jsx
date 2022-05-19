@@ -23,12 +23,12 @@ export default function Contact() {
         <ContactContent>
           <ContactForm>
             <form
-              name="contact-form"
+              name="contact-form-v2"
               method="POST"
               data-netlify="true"
               className="flex"
             >
-              <input type="hidden" name="form-name" value="contact-form" />
+              <input type="hidden" name="form-name" value="contact-form-v2" />
               <div className="group-input-wrap">
                 <div className="input-label-group">
                   <label htmlFor="first-name">First Name</label>
