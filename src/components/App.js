@@ -8,7 +8,7 @@ import About from "./about/About";
 import Projects from "./projects/Projects";
 import Contact from "../components/contact/Contact";
 import Footer from "./footer/Footer.jsx";
-import Icons from "./icons/Icons";
+// import Icons from "./icons/Icons";
 import { StyledMain } from "../styles/Main.Styled";
 
 const DarkMode = styled.div`
@@ -75,7 +75,7 @@ function App() {
         <DarkMode onClick={themeModeToggler}>
           <CgDarkMode />
         </DarkMode>
-        <Icons />
+        {/* <Icons /> */}
       </React.Fragment>
     </ThemeProvider>
   );

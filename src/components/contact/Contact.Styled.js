@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const ContactContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
   form {
     padding: 2rem;
     background-color: ${({ theme }) => theme.textCl};

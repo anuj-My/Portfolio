@@ -18,6 +18,14 @@ export const IconsContainer = styled.div`
     background-color: ${({ theme }) => theme.textCl};
     margin-top: 2rem;
   }
+
+  @media screen and (max-width: 768px) {
+    &::after {
+      display: none;
+    }
+    flex-direction: row;
+    position: static;
+  }
 `;
 
 export const IconsWrapper = styled.div`

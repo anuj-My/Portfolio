@@ -11,6 +11,7 @@ import {
 } from "../../styles/Section.Styled";
 import { AnchorButtonWhite } from "../../styles/Button.styled";
 import { ContactContent, ContactForm } from "./Contact.Styled";
+import Icons from "../icons/Icons";
 
 export default function Contact() {
   return (
@@ -98,6 +99,7 @@ export default function Contact() {
             </form>
             {/* <h4>Say Hello !</h4> */}
           </ContactForm>
+          <Icons />
         </ContactContent>
       </Container>
     </StyledSection>
