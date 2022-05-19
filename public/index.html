@@ -51,14 +51,29 @@
     <form name="contact-form-v2" netlify netlify-honeypot="bot-field" hidden>
       <div className="group-input-wrap">
         <div className="input-label-group">
-          <label htmlFor="name">Full Name</label>
+          <label htmlFor="first-name">First Name</label>
           <div className="input-wrap">
             <input
               type="text"
               className="input-box"
-              name="name"
-              id="name"
-              placeholder="Your Name"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </div>
+
+        <div className="input-label-group">
+          <label htmlFor="last-name">Last Name</label>
+          <div className="input-wrap">
+            <input
+              type="text"
+              className="input-box"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
               autocomplete="off"
               required
             />
@@ -79,21 +94,6 @@
             />
           </div>
         </div>
-
-        <div className="input-label-group">
-          <label htmlFor="subject">Subject</label>
-          <div class="input-wrap">
-            <input
-              type="text"
-              className="input-box"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              max="30"
-              required
-            />
-          </div>
-        </div>
       </div>
       <div className="textarea-group-wrap">
         <div className="input-label-group">
@@ -105,14 +105,16 @@
               id="message"
               placeholder="Write Your Message Here..."
               min="5"
+              resize="false"
+              style="resize: none"
               required
             ></textarea>
           </div>
         </div>
       </div>
-      <AnchorButtonBlack as="button" type="submit">
+      <AnchorButtonWhite as="button" type="submit">
         Say hello!
-      </AnchorButtonBlack>
+      </AnchorButtonWhite>
     </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
