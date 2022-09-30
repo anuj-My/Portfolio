@@ -4,7 +4,7 @@ export const StyledHero = styled.section`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin span {
     font-size: 2rem;
   }
